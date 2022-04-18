@@ -1,2 +1,12 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+<% if user_signed_in? %>
+  <div class="flex">
+    <h1>Hello</h1>
+    <p>Log in first please.</p>
+  </div>
+<% else %>
+  <div class="flex">
+    <h1>Welcome to OfficeBreak</h1>
+    <p>Log in first please.</p>
+  </div>
+<% end %>
