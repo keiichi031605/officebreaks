@@ -1,0 +1,27 @@
+<div class="m-5" style="text-align: center;">
+  <div class="p-3" style="background-color: white;">
+    <h1>Shopping Cart</h1>
+  </div>
+
+  <% if @items.length == 0 %>
+    <div class="p-5 m-5">
+      <h2>Shopping Cart is empty</h2>
+    </div>
+    <div class="p-3">
+      <button type="button" class="btn btn-primary"><%= link_to "Go Back To Menu", items_url(), style: "color: white;" %></button>
+    </div>
+  <% else %>
+    <div class="pt-5">
+      <% @items.each do |item| %>
+        <div class="" style="text-align: left; padding-left: 1130px; ">
+          <h3>
+            - <%= item.name %> x 1
+          </h3>
+        </div>
+      <% end %>
+    </div>
+    <div class="m-5">
+      <button type="button" class="btn btn-primary"><%= link_to "Checkout", thanks_users_url(), style: "color: white;" %></button>
+    </div>
+  <% end %>
+</div>

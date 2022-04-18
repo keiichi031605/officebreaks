@@ -1,0 +1,19 @@
+<div class="m-5" style="text-align: center;">
+  <div class="p-3" style="background-color: white;">
+    <h1>Menu List</h1>
+  </div>
+
+<%= form_with url: cart_users_url(), local: true do |form| %>
+    <div class="mt-5">
+      <% @items.each do |item| %>
+        <div class="m-1" style="text-align: left; padding-left: 1180px; ">
+          <%= form.check_box :item_id, {multiple: true}, item.id, nil  %>
+          <%= form.label item.name %>
+        </div>
+      <% end %>
+    </div>
+    <div class="m-5">
+      <%= form.submit "View Cart", class: "btn btn-primary" %>
+    </div>
+<% end %>
+</div>

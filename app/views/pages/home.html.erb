@@ -1,12 +1,22 @@
 
 <% if user_signed_in? %>
-  <div class="flex">
+  <div class="m-5" style="text-align: center;">
+    <div class="m-3">
     <h1>Hello</h1>
-    <p></p>
+    </div>
+    <div class="m-3">
+    <%= link_to "View Menu List", items_url() %>
+    </div>
   </div>
 <% else %>
-  <div class="flex">
-    <h1>Welcome to OfficeBreak</h1>
-    <p>Log in first please.</p>
+  <div class="m-5" style="text-align: center;">    
+  <div class="m-3">
+    <h1>Welcome to OfficeBreak!</h1>
+  </div>
+  <div class="m-3">
+    <button class="m-5 btn btn-primary"> 
+      <%= link_to "Login", new_user_session_path, style: "color:white;" %>
+    </button>
+  </div>
   </div>
 <% end %>
