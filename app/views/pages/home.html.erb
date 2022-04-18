@@ -1,20 +1,25 @@
 
 <% if user_signed_in? %>
   <div class="m-5" style="text-align: center;">
-    <div class="m-3">
-      <h3>Hello! Order snacks or drinks for your break from the button below</h3>
+    <div class="home">
+      <h1>HOME</h1>
     </div>
     <div class="">
-      <%= link_to "View Menu List", items_url(), class: "btn btn-primary m-5" %>
+      <%= image_tag ("menu.jpg"), style: "height: 30%; width: 30%;" %>
+
+      <%= link_to "View Menu List", items_url(), class: "btn btn-primary home-image" %>
     </div>
   </div>
 <% else %>
   <div class="m-5" style="text-align: center;">    
-  <div class="m-3">
-    <h1>Welcome to OfficeBreak!</h1>
-  </div>
-  <div class="m-3">
-      <%= link_to "Log In", new_user_session_path, style: "color:white;", class: "btn btn-primary m-5" %>
-  </div>
+    <div class="wannabreak">
+      <h1>Want to have a break?</h1>
+    </div>
+    <div class="m-3">
+      <%= image_tag ("menu.jpg"), style: "height: 30%; width: 30%;" %>
+    </div>
+    <div class="m-3">
+        <%= link_to "Log In", new_user_session_path, style: "color:white;", class: "btn btn-primary m-5" %>
+    </div>
   </div>
 <% end %>
