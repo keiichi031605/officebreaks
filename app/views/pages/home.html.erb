@@ -2,10 +2,10 @@
 <% if user_signed_in? %>
   <div class="m-5" style="text-align: center;">
     <div class="m-3">
-    <h1>Hello <%=  %></h1>
+      <h3>Hello! Order snacks or drinks for your break from the button below</h3>
     </div>
-    <div class="m-3">
-    <%= link_to "View Menu List", items_url() %>
+    <div class="">
+      <%= link_to "View Menu List", items_url(), class: "btn btn-primary m-5" %>
     </div>
   </div>
 <% else %>
