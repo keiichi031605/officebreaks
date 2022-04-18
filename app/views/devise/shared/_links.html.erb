@@ -1,14 +1,10 @@
 <%- if controller_name != 'sessions' %>
-  <button class="m-3 btn btn-primary">
-    <%= link_to "Log in", new_session_path(resource_name), style: "color:white;" %>
-  </button>
+  <%= link_to "Log in", new_session_path(resource_name), style: "color:white;", class: "btn btn-primary m-3" %>
   <br />
 <% end %>
 
 <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
-  <button class="m-3 btn btn-success">
-    <%= link_to "Sign up", new_registration_path(resource_name), style: "color:white;" %>
-  </button>
+  <%= link_to "Sign up", new_registration_path(resource_name), style: "color:white;", class: "btn btn-success m-3" %>
   <br />
 <% end %>
 

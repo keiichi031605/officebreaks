@@ -8,7 +8,7 @@
       <h2>Shopping Cart is empty</h2>
     </div>
     <div class="p-3">
-      <button type="button" class="btn btn-success"><%= link_to "<Back To Menu", items_url(), style: "color: white;" %></button>
+      <%= link_to "<Back To Menu", items_url(), style: "color: white;", class: "btn btn-success" %>
     </div>
   <% else %>
     <div class="pt-5">
@@ -21,8 +21,8 @@
       <% end %>
     </div>
     <div class="m-5">
-      <button type="button" class="btn btn-success"><%= link_to "<Back To Menu", items_url(), style: "color: white;" %></button>
-      <button type="button" class="btn btn-primary"><%= link_to "Checkout", thanks_users_url(), style: "color: white;" %></button>
+      <%= link_to "<Back To Menu", items_url(), style: "color: white;", class: "btn btn-success" %>
+      <%= link_to "Checkout", thanks_users_url(), style: "color: white;", class: "btn btn-primary" %>
     </div>
   <% end %>
 </div>
