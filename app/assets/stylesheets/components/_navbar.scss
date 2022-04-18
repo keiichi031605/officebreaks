@@ -1,12 +1,19 @@
-.navbar-lewagon {
+.navbar-officebreaks {
   justify-content: space-between;
-  background: white;
+  background: rgb(55, 55, 200);
+  padding: 0;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar-officebreaks .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
+.navbar-officebreaks .navbar-brand img {
   width: 40px;
+}
+
+.nav-item {
+  color: white;
+  margin: 12px;
+  text-decoration: none;
 }
