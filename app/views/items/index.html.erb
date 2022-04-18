@@ -4,15 +4,11 @@
   </div>
 
 <%= form_with url: cart_users_url(), local: true do |form| %>
-    <div class="mt-5">
+    <div class="mt-5" style="text-align: center;">
       <% @items.each do |item| %>
-        <div class="m-1" style="justify-content: center">
-          <%# <div> %>
+        <div class="m-2">
             <%= form.check_box :item_id, {multiple: true}, item.id, nil  %>
-          <%# </div> %>
-          <%# <div> %>
             <%= form.label item.name %>
-          <%# </div> %>
         </div>
       <% end %>
     </div>
