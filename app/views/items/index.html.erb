@@ -13,11 +13,11 @@
           <div class="row menuitem">
             <div class="col-md-3">
               <div class="card" style="width: 18rem;">
-                <%= image_tag "image.png" ,class: "card-img-top" %>
+                <%= image_tag "meal.jpg" ,class: "card-img-top" %>
                 <div class="card-body item_details">
                   <%= form.check_box :item_id, {multiple: true}, item.id, nil  %>
                   <%= form.label item.name %>
-                  <%= form.label "$#{item.price}.0" %>
+                  <%= form.label "$#{item.price}.0", style: "color:black;" %>
                 </div>
               </div>
             </div>
@@ -35,11 +35,11 @@
           <div class="row menuitem">
             <div class="col-md-3">
               <div class="card" style="width: 18rem;">
-                <%= image_tag "image.png" ,class: "card-img-top" %>
+                <%= image_tag "snack.jpg" ,class: "card-img-top" %>
                 <div class="card-body item_details">
                   <%= form.check_box :item_id, {multiple: true}, item.id, nil  %>
                   <%= form.label item.name %>
-                  <%= form.label "$#{item.price}.0" %>
+                  <%= form.label "$#{item.price}.0", style: "color:black;" %>
                 </div>
               </div>
             </div>
@@ -57,11 +57,11 @@
           <div class="row menuitem">
             <div class="col-md-3">
               <div class="card" style="width: 18rem;">
-                <%= image_tag "image.png" ,class: "card-img-top" %>
+                <%= image_tag "drink.jpg" ,class: "card-img-top" %>
                 <div class="card-body item_details">
                   <%= form.check_box :item_id, {multiple: true}, item.id, nil  %>
                   <%= form.label item.name %>
-                  <%= form.label "$#{item.price}.0" %>
+                  <%= form.label "$#{item.price}.0", style: "color:black;" %>
                 </div>
               </div>
             </div>

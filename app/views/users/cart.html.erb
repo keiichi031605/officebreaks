@@ -15,7 +15,13 @@
       <div class="row m-3 cart-items" style="text-align:center;border-bottom: 3px solid black;">
         <% @items.each do |item| %>
           <div class="m-3" style="width: 18rem;">
-            <%= image_tag "image.png" ,class: "card-img-top" %>
+          <% if item.status == "meal" %>
+            <%= image_tag "meal.jpg" ,class: "card-img-top" %>
+          <% elsif item.status == "snack" %>
+            <%= image_tag "snack.jpg" ,class: "card-img-top" %>
+          <% else %>
+            <%= image_tag "drink.jpg" ,class: "card-img-top" %>
+          <% end %>
           </div>
           <div class="m-3">
             <h3><%= item.name %> x 1</h3>
@@ -28,7 +34,7 @@
       <div class="m-3" style="text-align:center;border-bottom: 3px solid black;">
         <h3>Delivery Fee: $3.0</h3>
       </div>
-      <div class="m-3" style="text-align:center;border-bottom: 3px solid black;">
+      <div class="m-3" style="text-align:center;border-bottom: 3px solid black; color:#004AAD;">
         <h3>Total: $<%= @total %>.0</h3>
       </div>
 
