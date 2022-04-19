@@ -7,6 +7,10 @@ class UsersController < ApplicationController
         @items << item
       end
     end
+    @total = 0
+    @items.each do |item|
+      @total = @total + item.price
+    end
   end
 
   def thanks
