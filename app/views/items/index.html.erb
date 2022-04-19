@@ -1,7 +1,7 @@
 <%# add price %>
 <%# add price %>
 <div class="m-5 items_page" style="text-align: center;">
-  <div class="title" style="border-bottom: 3px solid #3d85c6;">
+  <div class="title" style="border-bottom: 3px solid #004AAD;">
     <h1>Menu List</h1>
   </div>
 
@@ -15,7 +15,7 @@
           <div class="col-md-3">
             <div class="card" style="width: 18rem;">
               <%= image_tag "image.png" ,class: "card-img-top" %>
-              <div class="card-body" style="color:#3d85c6;">
+              <div class="card-body" style="color:#004AAD;">
                 <%= form.check_box :item_id, {multiple: true}, item.id, nil  %>
                 <%= form.label item.name %>
                 <%= form.label "$ #{item.price}.0" %>
