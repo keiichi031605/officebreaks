@@ -7,7 +7,7 @@ class UsersController < ApplicationController
         @items << item
       end
     end
-    @total = 0
+    @total = 3
     @items.each do |item|
       @total = @total + item.price
     end
