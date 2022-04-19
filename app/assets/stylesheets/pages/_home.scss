@@ -3,9 +3,14 @@
   color: #004AAD;
   margin-bottom: 100px;
 }
-
+.home-page{
+  padding: 100px;
+  margin: 100px;
+  background-color: white;
+}
 .home{
   margin-bottom: 100px;
+  color: #004AAD;
 }
 .home-image{
   margin-left: 100px;
@@ -23,6 +28,8 @@
 
 .items_page{
   padding: 150px;
+  margin: 100px;
+  background-color: white;
 }
 .menu {
   display: flex;
@@ -35,4 +42,14 @@
 
 .cart-items {
   justify-content: center;
+}
+
+.thanks{
+  padding: 100px;
+  margin: 100px;
+  background-color: white;
+}
+
+.btn {
+  font-size: 24px;
 }
