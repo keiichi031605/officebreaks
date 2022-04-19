@@ -8,7 +8,7 @@
       <h2>Your Shopping Cart is currently empty</h2>
     </div>
     <div class="p-3">
-      <%= link_to "<Back To Menu", items_url(), style: "color: white;", class: "btn btn-success" %>
+      <%= link_to "<Back To Menu", items_url(), style: "color: white;", class: "btn btn-success btn-green" %>
     </div>
   <% else %>
 
@@ -21,21 +21,21 @@
             <h3><%= item.name %> x 1</h3>
           </div>
           <div class="">
-            <h3>$ <%= item.price %>.0</h3>
+            <h3>$<%= item.price %>.0</h3>
           </div>
         <% end %>
       </div>
       <div class="m-3" style="text-align:center;border-bottom: 3px solid black;">
-        <h3>Delivery Fee: $ 3.0</h3>
+        <h3>Delivery Fee: $3.0</h3>
       </div>
       <div class="m-3" style="text-align:center;border-bottom: 3px solid black;">
-        <h3>Total: $ <%= @total %>.0</h3>
+        <h3>Total: $<%= @total %>.0</h3>
       </div>
 
 
     <div class="m-5">
-      <%= link_to "<Back To Menu", items_url(), style: "color: white;", class: "btn btn-success" %>
-      <%= link_to "Checkout", thanks_users_url(), style: "color: white;", class: "btn btn-primary" %>
+      <%= link_to "<Back To Menu", items_url(), style: "color: white;", class: "btn btn-success btn-green" %>
+      <%= link_to "Checkout", thanks_users_url(), style: "color: white;", class: "btn btn-primary btn-officebreaks" %>
     </div>
   <% end %>
 </div>

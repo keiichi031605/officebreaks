@@ -14,10 +14,10 @@
             <div class="col-md-3">
               <div class="card" style="width: 18rem;">
                 <%= image_tag "image.png" ,class: "card-img-top" %>
-                <div class="card-body" style="color:#004AAD;">
+                <div class="card-body item_details">
                   <%= form.check_box :item_id, {multiple: true}, item.id, nil  %>
                   <%= form.label item.name %>
-                  <%= form.label "$ #{item.price}.0" %>
+                  <%= form.label "$#{item.price}.0" %>
                 </div>
               </div>
             </div>
@@ -36,10 +36,10 @@
             <div class="col-md-3">
               <div class="card" style="width: 18rem;">
                 <%= image_tag "image.png" ,class: "card-img-top" %>
-                <div class="card-body" style="color:#3d85c6;">
+                <div class="card-body item_details">
                   <%= form.check_box :item_id, {multiple: true}, item.id, nil  %>
                   <%= form.label item.name %>
-                  <%= form.label "$ #{item.price}.0" %>
+                  <%= form.label "$#{item.price}.0" %>
                 </div>
               </div>
             </div>
@@ -58,10 +58,10 @@
             <div class="col-md-3">
               <div class="card" style="width: 18rem;">
                 <%= image_tag "image.png" ,class: "card-img-top" %>
-                <div class="card-body" style="color:#3d85c6;">
+                <div class="card-body item_details">
                   <%= form.check_box :item_id, {multiple: true}, item.id, nil  %>
                   <%= form.label item.name %>
-                  <%= form.label "$ #{item.price}.0" %>
+                  <%= form.label "$#{item.price}.0" %>
                 </div>
               </div>
             </div>
@@ -70,7 +70,7 @@
       </div>
     </div>
     <div class="m-5">
-      <%= form.submit "View Cart", class: "btn btn-primary" %>
+      <%= form.submit "View Cart", class: "btn btn-primary btn-officebreaks" %>
     </div>
 <% end %>
 </div>
