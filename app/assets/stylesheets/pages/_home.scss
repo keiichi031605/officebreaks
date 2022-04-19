@@ -8,6 +8,26 @@
   margin-bottom: 100px;
 }
 .home-image{
-  margin-top:250px;
-  margin-left: 60px;
+  margin-left: 100px;
+}
+
+.title {
+  color: #3d85c6;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.subtitle {
+  color: black;
+  text-align: center;
+}
+
+.items_page{
+  padding: 150px;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menuitem{
+  padding: 100px;
 }

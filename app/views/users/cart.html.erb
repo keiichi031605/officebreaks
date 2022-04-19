@@ -1,5 +1,5 @@
-<div class="m-5" style="text-align: center;">
-  <div class="p-3" style="background-color: white;">
+<div class="m-5 items_page" style="text-align: center;">
+  <div class="title" style="border-bottom: 5px solid #3d85c6;">
     <h1>Shopping Cart</h1>
   </div>
 
@@ -11,15 +11,22 @@
       <%= link_to "<Back To Menu", items_url(), style: "color: white;", class: "btn btn-success" %>
     </div>
   <% else %>
-    <div class="pt-5">
-      <% @items.each do |item| %>
-        <div class="" style="text-align: center;">
+
+      <div class="mt-5">
+        <% @items.each do |item| %>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                <%= image_tag "image.png" ,class: "card-img-top" %>
+              </div>
+            </div>
+          </div>
           <h3>
-            - <%= item.name %> x 1
+            <%= item.name %> x 1
           </h3>
-        </div>
-      <% end %>
-    </div>
+        <% end %>
+      </div>
+
     <div class="m-5">
       <%= link_to "<Back To Menu", items_url(), style: "color: white;", class: "btn btn-success" %>
       <%= link_to "Checkout", thanks_users_url(), style: "color: white;", class: "btn btn-primary" %>
