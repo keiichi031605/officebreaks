@@ -4,64 +4,70 @@
   </div>
 
 <%= form_with url: cart_users_url(), local: true do |form| %>
-    <div class="subtitle">
-      <h2>Quick Meals</h2>
-    </div>
-    <div class="mt-5 menu">
-      <% @meals.each do |item| %>
-        <div class="row menuitem">
-          <div class="col-md-3">
-            <div class="card" style="width: 18rem;">
-              <%= image_tag "image.png" ,class: "card-img-top" %>
-              <div class="card-body" style="color:#004AAD;">
-                <%= form.check_box :item_id, {multiple: true}, item.id, nil  %>
-                <%= form.label item.name %>
-                <%= form.label "$ #{item.price}.0" %>
+    <div class="category">
+      <div class="subtitle">
+        <h2>Quick Meals</h2>
+      </div>
+      <div class="mt-5 menu">
+        <% @meals.each do |item| %>
+          <div class="row menuitem">
+            <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                <%= image_tag "image.png" ,class: "card-img-top" %>
+                <div class="card-body" style="color:#004AAD;">
+                  <%= form.check_box :item_id, {multiple: true}, item.id, nil  %>
+                  <%= form.label item.name %>
+                  <%= form.label "$ #{item.price}.0" %>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      <% end %>
+        <% end %>
+      </div>
     </div>
 
-    <div class="subtitle">
-      <h2>Snacks</h2>
-    </div>
-    <div class="mt-5 menu">
-      <% @snacks.each do |item| %>
-        <div class="row menuitem">
-          <div class="col-md-3">
-            <div class="card" style="width: 18rem;">
-              <%= image_tag "image.png" ,class: "card-img-top" %>
-              <div class="card-body" style="color:#3d85c6;">
-                <%= form.check_box :item_id, {multiple: true}, item.id, nil  %>
-                <%= form.label item.name %>
-                <%= form.label "$ #{item.price}.0" %>
+    <div class="category">
+      <div class="subtitle">
+        <h2>Snacks</h2>
+      </div>
+      <div class="mt-5 menu">
+        <% @snacks.each do |item| %>
+          <div class="row menuitem">
+            <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                <%= image_tag "image.png" ,class: "card-img-top" %>
+                <div class="card-body" style="color:#3d85c6;">
+                  <%= form.check_box :item_id, {multiple: true}, item.id, nil  %>
+                  <%= form.label item.name %>
+                  <%= form.label "$ #{item.price}.0" %>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      <% end %>
+        <% end %>
+      </div>
     </div>
 
-    <div class="subtitle">
-      <h2>Drinks</h2>
-    </div>
-    <div class="mt-5 menu">
-      <% @drinks.each do |item| %>
-        <div class="row menuitem">
-          <div class="col-md-3">
-            <div class="card" style="width: 18rem;">
-              <%= image_tag "image.png" ,class: "card-img-top" %>
-              <div class="card-body" style="color:#3d85c6;">
-                <%= form.check_box :item_id, {multiple: true}, item.id, nil  %>
-                <%= form.label item.name %>
-                <%= form.label "$ #{item.price}.0" %>
+    <div class="category">
+      <div class="subtitle">
+        <h2>Drinks</h2>
+      </div>
+      <div class="mt-5 menu">
+        <% @drinks.each do |item| %>
+          <div class="row menuitem">
+            <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                <%= image_tag "image.png" ,class: "card-img-top" %>
+                <div class="card-body" style="color:#3d85c6;">
+                  <%= form.check_box :item_id, {multiple: true}, item.id, nil  %>
+                  <%= form.label item.name %>
+                  <%= form.label "$ #{item.price}.0" %>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      <% end %>
+        <% end %>
+      </div>
     </div>
     <div class="m-5">
       <%= form.submit "View Cart", class: "btn btn-primary" %>

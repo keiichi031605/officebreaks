@@ -6,7 +6,7 @@
 .home-page{
   padding: 100px;
   margin: 100px;
-  background-color: white;
+  background-color: #fffcfc;
 }
 .home{
   margin-bottom: 100px;
@@ -22,15 +22,21 @@
   text-align: center;
 }
 .subtitle {
-  color: black;
+  color: #004AAD;
   text-align: center;
 }
 
 .items_page{
   padding: 150px;
   margin: 100px;
-  background-color: white;
 }
+
+.category{
+  background-color: #fffcfc;
+  padding: 50px;
+  margin-bottom: 36px;
+}
+
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -39,6 +45,11 @@
   padding: 100px;
 }
 
+.cart_page{
+  padding: 150px;
+  margin: 100px;
+  background-color: #fffcfc;
+}
 
 .cart-items {
   justify-content: center;
@@ -47,7 +58,7 @@
 .thanks{
   padding: 100px;
   margin: 100px;
-  background-color: white;
+  background-color: #fffcfc;
 }
 
 .btn {
