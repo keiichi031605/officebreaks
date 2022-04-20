@@ -1,4 +1,4 @@
-// Specific CSS for your home-page
+// Specific CSS for home-page
 .wannabreak {
   color: #004AAD;
   margin-bottom: 100px;
@@ -16,6 +16,13 @@
   margin-left: 100px;
 }
 
+// register/login page
+.enter_option {
+  margin-top: 150px;
+  margin-left: 16px;
+}
+
+// items page
 .title {
   color: #004AAD;
   margin-bottom: 100px;
@@ -31,13 +38,11 @@
   padding: 100px 30px 100px 30px;
   margin: 100px;
 }
-
 .category{
   background-color: #fffcfc;
   padding: 22px;
   margin-bottom: 36px;
 }
-
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -45,33 +50,33 @@
 .menuitem{
   padding: 40px;
 }
-
 .item_details{
   font-size: 22px;
   color:#004AAD;
 }
 
+// cart page
 .cart_page{
   padding: 150px;
   margin: 100px;
   background-color: #fffcfc;
 }
-
 .cart-items {
   justify-content: center;
 }
 
+// thanks page
 .thanks{
   padding: 100px;
   margin: 100px;
   background-color: #fffcfc;
 }
 
+// buttons 
 .btn-officebreaks {
   font-size: 24px;
   background-color:#004AAD;
 }
-
 .btn-green {
   font-size: 24px;
   background-color:#35a575;
