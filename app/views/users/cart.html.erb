@@ -3,7 +3,14 @@
     <h1>Shopping Cart</h1>
   </div>
 
-  <% if @items.length == 0 %>
+  <% if @error.present? %>
+    <div class="p-5 m-5" style="color: red;">
+      <h2>ERROR: There is invalid input for the quantity of Items. Please go back to the menu page and try again.</h2>
+    </div>
+    <div class="p-3">
+      <%= link_to "<Back To Menu", items_url(), style: "color: white;", class: "btn btn-success btn-green" %>
+    </div>
+  <% elsif @items.length == 0 %>
     <div class="p-5 m-5">
       <h2>Your Shopping Cart is currently empty</h2>
     </div>

@@ -11,9 +11,12 @@ class UsersController < ApplicationController
         @items << item_details
       end
     end
-    
+
     @total = 3
     @items.each do |item|
+      if item[1].to_i == 0
+        @error = "Invalid"
+      end
       cost = item[0].price * item[1].to_i
       @total = @total + cost
     end

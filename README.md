@@ -3,7 +3,7 @@
 
 # Production:
 ##############################################################################
-Here is the deployed production below: https://itinfrastracture.herokuapp.com/
+Here is the deployed production: https://itinfrastracture.herokuapp.com/
 ##############################################################################
 
 # Files description with relative path
