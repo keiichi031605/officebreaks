@@ -18,7 +18,7 @@
 
 // register/login page
 .enter_option {
-  margin-top: 150px;
+  margin-top: 150px ;
   margin-left: 16px;
 }
 
@@ -55,6 +55,15 @@
   color:#004AAD;
 }
 
+
+.quantity{
+  vertical-align: center;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  font-size: 28px;
+}
+
 // cart page
 .cart_page{
   padding: 150px;
@@ -83,7 +92,8 @@
 }
 
 // tickbox
-input[type='checkbox'] {
-  width: 20px;
-  height: 20px;
-}
+// input[type='checkbox'] {
+//   width: 20px;
+//   height: 20px;
+// }
+

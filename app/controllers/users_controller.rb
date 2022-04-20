@@ -1,15 +1,21 @@
 class UsersController < ApplicationController
   def cart
+    items = Item.all
     @items = []
-    if params[:item_id].present?
-      params[:item_id].each do |item_id|
-        item = Item.find(item_id)
-        @items << item
+    items.each do |item|
+      item_details = []
+      if params[item.id.to_s].present?
+        quantity = params[item.id.to_s]
+        item_details << item
+        item_details << quantity
+        @items << item_details
       end
     end
+    
     @total = 3
     @items.each do |item|
-      @total = @total + item.price
+      cost = item[0].price * item[1].to_i
+      @total = @total + cost
     end
   end
 
